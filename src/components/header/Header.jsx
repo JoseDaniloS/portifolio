@@ -4,8 +4,8 @@ import Menu from "./images/Menu.png";
 function Header({setNavigation}) {
 
   return (
-    <header className="w-full bg-[#032D58] p-4 flex items-center justify-between pl-[100px] pr-[40px]">
-      <div className="flex items-center">
+    <header className="w-full bg-[#032D58] p-4 flex items-center pl-[100px] max-md:pl-4 justify-between ">
+      <div>
         <img src={logo} alt="" className="h-full w-[200px]" />
       </div>
 

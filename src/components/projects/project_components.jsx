@@ -8,11 +8,7 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
       <div
         style={{
             backgroundColor: "rgba(0, 0, 0, 0.5)",
-            opacity: hover ? 1 : 0,
-            visibility: hover ? "visible" : "hidden",
-            width: "100%",
-            height: "130px",
-            transition: "visibility 0.5s ease, opacity 0.5s ease"
+            visibility: !hover ? "hidden" : "visible"
         }}
         className="flex flex-col w-full justify-center items-start p-5 font-bold gap-3 rounded-[5px]"
       >
@@ -38,11 +34,7 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
       <div
         style={{
             backgroundColor: "rgba(0, 0, 0, 0.5)",
-            opacity: hover ? 1 : 0,
             visibility: hover ? "visible" : "hidden",
-            width: "100%",
-            height: "130px",
-            transition: "visibility 0.5s ease, opacity 0.5s ease"
         }}
         className="flex flex-col w-full justify-center items-start p-5 font-bold gap-3 rounded-[5px]"
       >
@@ -66,7 +58,7 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="h-[250px] w-[410px]  flex flex-col items-center gap-1 rounded-[10px] justify-end"
+      className="h-[250px] max-md:w-full  flex flex-col items-center gap-1 rounded-[10px] justify-end"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

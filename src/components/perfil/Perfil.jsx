@@ -4,12 +4,12 @@ import Linkedin from "./images/linkedin.png";
 
 function Perfil() {
   return (
-    <div id="about" className=" w-full flex items-center justify-around max-lg:flex-col max-md:space-y-10">
+    <div id="about" className=" w-[90vw] flex items-center justify-evenly max-lg:flex-col max-md:space-y-10">
       <div>
         <img src={Iam} alt="" className="w-[20vw] rounded-full max-sm:w-[60vw]" />
       </div>
-      <div className=" flex flex-col gap-5 ">
-        <h1 className=" text-[40px] text-[#032D58] font-bold max-md:text-[35px]">
+      <div className=" flex flex-col gap-5 max-md:items-center">
+        <h1 className=" text-[40px] text-[#032D58] font-bold max-md:text-[32px] text-center">
           Olá, me chamo José Danilo
         </h1>
         
