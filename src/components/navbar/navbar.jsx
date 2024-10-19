@@ -19,7 +19,8 @@ function Navbar({setNavigation, navigation}) {
         height: "100vh",
         transition: "visibility 0.5s ease, opacity 0.5s ease"
       }}
-
+      onClick={() => setNavigation(false)}
+      
       className="flex flex-col items-center justify-center text-white font-bold text-[25px]"
     >
       <div className="flex flex-col items-center gap-10">

@@ -1,24 +1,29 @@
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export const Contato = () => {
-    const form = useRef();
+  const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm('service_g0qzd9o', 'template_l3aofxj', form.current, 'CRPHNdzbj58kZQLig')
-        .then(
-          () => {
-            console.log('SUCCESS!');
-            form.current.reset();
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
-    };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_g0qzd9o",
+        "template_l3aofxj",
+        form.current,
+        "CRPHNdzbj58kZQLig"
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div
       id="contato"
@@ -31,7 +36,13 @@ export const Contato = () => {
           Estou disponível para novos projetos e oportunidades. Sinta-se à
           vontade para entrar em contato comigo!
         </span>
-        <form ref={form} onSubmit={sendEmail} action="" method="post" className="flex flex-col space-y-4">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          action=""
+          method="post"
+          className="flex flex-col space-y-4"
+        >
           <input
             type="text"
             name="user_name"
@@ -45,9 +56,10 @@ export const Contato = () => {
             name="user_email"
             id="email"
             placeholder="Seu Email"
-            className=" h-[50px] pl-[10px] rounded-md focus:outline-none text-[black]"
+            className="h-[50px] pl-[10px] rounded-md focus:outline-none text-[black]"
             required
           />
+
           <textarea
             name="message"
             id="mensagem"
@@ -63,6 +75,6 @@ export const Contato = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Contato;

@@ -20,7 +20,7 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
             </button>
           </a>
           <a href={link_github} target="_blank" >
-            <button className=" h-[40px] w-[180px] bg-[#032D58] rounded-[10px] text-[white]">
+            <button className=" h-[40px]  bg-[#032D58] rounded-[10px] text-[white]">
               LINK DO REPOSITORIO
             </button>
           </a>
