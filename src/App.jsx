@@ -12,7 +12,7 @@ function App() {
   const [navigation, setNavigation] = useState(false)
 
   return (
-    <main className="h-screen w-full bg-[#DDDEEE] space-y-[100px] overflow-x-hidden flex flex-col items-center">
+    <main className="h-screen w-full bg-[#eee] space-y-[100px] overflow-x-hidden flex flex-col items-center">
       <Header setNavigation={setNavigation}/>
       <Navbar setNavigation={setNavigation} navigation={navigation}/>
       <Perfil />

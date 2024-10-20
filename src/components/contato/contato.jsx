@@ -68,7 +68,7 @@ export const Contato = () => {
             placeholder="Sua Mensagem"
             className="h-[200px] p-[10px] rounded-md focus:outline-none text-[black] resize-none"
           ></textarea>
-          <button className=" bg-[white] text-black font-semibold w-[220px] h-[50px] rounded-sm ">
+          <button className=" bg-[white] text-[#032D58] font-semibold w-[220px] h-[50px] rounded-[10px] ">
             Enviar Mensagem
           </button>
         </form>

@@ -6,7 +6,7 @@ function Navbar({setNavigation, navigation}) {
     }
   };
   return (
-    <div
+    <nav
     style={{
         backgroundColor: "rgba(0, 0, 0, 0.5)",
         backdropFilter: "blur(3px)",
@@ -69,7 +69,7 @@ function Navbar({setNavigation, navigation}) {
           Contato
         </a>
       </div>
-    </div>
+    </nav>
   );
 }
 
