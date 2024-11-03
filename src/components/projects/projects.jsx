@@ -2,6 +2,7 @@ import PComponents from "./project_components";
 import Imc from "./images/imc_calculator.png";
 import StreetLight from "./images/street_light.png";
 import SGB from "./images/SGB.png";
+import Carcara from "./images/Carcara.png"
 
 function Projetos() {
   return (
@@ -39,6 +40,14 @@ function Projetos() {
               "https://sgb-scholarship-management-system.vercel.app"
             }
             nome={"SGB - Sistema de Gestão de Bolsistas"}
+            tipo={false}
+          />
+          <PComponents
+            image={Carcara}
+            link_projeto={
+              "https://www.carcara.ufersa.dev.br"
+            }
+            nome={"Carcará - Projeto"}
             tipo={false}
           />
         </div>

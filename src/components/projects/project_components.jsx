@@ -15,12 +15,12 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
         <p className="text-[20px] font-bold text-white">{nome}</p>
         <div className=" flex gap-5 text-[13px]">
           <a href={link_projeto} target="_blank">
-            <button className="h-[40px] w-[140px] bg-[#032D58] rounded-[10px] text-[white]">
+            <button className="p-3 bg-[#032D58] rounded-[10px] text-[white]">
               LINK DO PROJETO
             </button>
           </a>
           <a href={link_github} target="_blank" >
-            <button className=" h-[40px]  bg-[#032D58] rounded-[10px] text-[white]">
+            <button className=" p-3 bg-[#032D58] rounded-[10px] text-[white]">
               LINK DO REPOSITORIO
             </button>
           </a>
@@ -58,7 +58,7 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="h-[250px] max-md:w-full  flex flex-col items-center gap-1 rounded-[10px] justify-end"
+      className="h-[250px] w-[400px] max-md:w-full  flex flex-col items-center gap-1 rounded-[10px] justify-end"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

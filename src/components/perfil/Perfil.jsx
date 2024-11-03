@@ -6,7 +6,7 @@ function Perfil() {
   return (
     <div id="about" className=" w-[90vw] flex items-center justify-evenly max-lg:flex-col max-md:space-y-10">
       <div>
-        <img src={Iam} alt="" className="w-[25vw] rounded-full max-sm:w-[90vw]" />
+        <img src={Iam} alt="" className="w-[25vw] rounded-full max-md:w-[90vw]" />
       </div>
       <div className=" flex flex-col gap-5 max-md:items-center">
         <h1 className=" text-[40px] text-[#032D58] font-bold max-md:text-[32px] text-center">
