@@ -2,17 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.animate-BaixoParaCima{
-    animation: BaixoParaCima 0.5s ease-in-out forwards ;
+.animate-BaixoParaCima {
+  animation: BaixoParaCima 0.8s ease-in-out forwards;
 }
 
+@keyframes BaixoParaCima {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
-@keyframes BaixoParaCima{
-    0%{
-        transform: translateY(100%);
-    }
-
-    100%{
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

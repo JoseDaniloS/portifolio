@@ -2,11 +2,13 @@ import PComponents from "./project_components";
 import Imc from "./images/imc_calculator.png";
 import StreetLight from "./images/street_light.png";
 import SGB from "./images/SGB.png";
-import Carcara from "./images/Carcara.png"
+import Carcara from "./images/Carcara.png";
+import Weather from "./images/WeatherApp.png"
 
 function Projetos() {
   return (
-    <div id="projetos"
+    <div
+      id="projetos"
       className="flex flex-col items-center space-y-10 text-[#032D58] max-md:w-[90vw]"
     >
       <h1 className="text-[40px] font-bold max-md:text-[35px]">Projetos</h1>
@@ -27,12 +29,17 @@ function Projetos() {
             nome={"Street Light"}
             tipo={true}
           />
+          <PComponents
+            image={Weather}
+            link_github={"https://github.com/JoseDaniloS/WeatherApp"}
+            link_projeto={"https://weather-app-pearl-gamma-18.vercel.app"}
+            nome={"Weather App"}
+            tipo={true}
+          />
         </div>
       </div>
       <div className="flex flex-col space-y-10 items-center w-full">
-        <p className="font-bold text-[20px]">
-          Código Privado
-        </p>
+        <p className="font-bold text-[20px]">Código Privado</p>
         <div className="flex gap-16 flex-wrap justify-center max-md:w-[90vw]">
           <PComponents
             image={SGB}
@@ -44,9 +51,7 @@ function Projetos() {
           />
           <PComponents
             image={Carcara}
-            link_projeto={
-              "https://www.carcara.ufersa.dev.br"
-            }
+            link_projeto={"https://www.carcara.ufersa.dev.br"}
             nome={"Carcará - Projeto"}
             tipo={false}
           />
