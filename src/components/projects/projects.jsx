@@ -4,6 +4,7 @@ import StreetLight from "./images/street_light.png";
 import SGB from "./images/SGB.png";
 import Carcara from "./images/Carcara.png";
 import Weather from "./images/WeatherApp.png"
+import Frequencia from "./images/Frequencia.png"
 
 function Projetos() {
   return (
@@ -49,6 +50,9 @@ function Projetos() {
             nome={"SGB - Sistema de Gestão de Bolsistas"}
             tipo={false}
           />
+          <PComponents image={Frequencia}
+          link_projeto={"https://frequencia-bolsistas.vercel.app"}
+          nome={"Assinar Frequencia Bolsista"} tipo={false} />
           <PComponents
             image={Carcara}
             link_projeto={"https://www.carcara.ufersa.dev.br"}
