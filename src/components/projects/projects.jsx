@@ -53,7 +53,7 @@ function Projetos() {
           <PComponents
             image={Frequencia}
             link_projeto={"https://www.frequencia-academica.ufersa.dev.br"}
-            nome={"Assinar Frequencia Bolsista"}
+            nome={"Frequência Acadêmica - Projeto Carcará/LISA"}
             tipo={false}
           />
           <PComponents

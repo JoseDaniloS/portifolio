@@ -7,8 +7,8 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
     return (
       <div
         style={{
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            visibility: !hover ? "hidden" : "visible"
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          visibility: !hover ? "hidden" : "visible",
         }}
         className="flex flex-col w-full justify-center animate-BaixoParaCima items-start p-5 font-bold gap-3 rounded-[5px]"
       >
@@ -19,7 +19,7 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
               LINK DO PROJETO
             </button>
           </a>
-          <a href={link_github} target="_blank" >
+          <a href={link_github} target="_blank">
             <button className=" p-3 bg-[#032D58] rounded-[10px] text-[white]">
               LINK DO REPOSITORIO
             </button>
@@ -33,8 +33,8 @@ function PComponents({ image, nome, link_projeto, link_github, tipo }) {
     return (
       <div
         style={{
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            visibility: hover ? "visible" : "hidden",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          visibility: hover ? "visible" : "hidden",
         }}
         className="flex flex-col animate-BaixoParaCima w-full justify-center items-start p-5 font-bold gap-3 rounded-[5px]"
       >
