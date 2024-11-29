@@ -33,7 +33,7 @@ function Navbar({setNavigation, navigation}) {
           href="/about"
           className="cursor-pointer"
         >
-          Desenvolvedor
+          Sobre mim
         </a>
         <a
           onClick={(e) => {

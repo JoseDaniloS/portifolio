@@ -4,15 +4,29 @@ import Linkedin from "./images/linkedin.png";
 
 function Perfil() {
   return (
-    <div id="about" className=" w-[90vw] flex items-center justify-evenly max-lg:flex-col max-md:space-y-10">
+    <div
+      id="about"
+      className=" w-[90vw] flex items-center justify-evenly max-lg:flex-col max-md:space-y-10"
+    >
       <div>
-        <img src={Iam} alt="" className="w-[25vw] rounded-full max-md:w-[90vw]" />
+        <img
+          src={Iam}
+          alt=""
+          className="w-[25vw] shadow-lg shadow-black rounded-full max-md:w-[90vw]"
+        />
       </div>
-      <div className=" flex flex-col gap-5 max-md:items-center">
-        <h1 className=" text-[40px] text-[#032D58] font-bold max-md:text-[32px] text-center">
+      <div className=" flex flex-col gap-5 max-w-[550px] max-md:items-center">
+        <h1 className=" text-[40px] text-[#032D58] font-bold max-md:text-[32px]">
           Olá, me chamo José Danilo
         </h1>
-        
+        <span className="font-semibold text-[18px]">
+          {" "}
+          apaixonado por Desenvolvimento Web e Computação em Nuvem.
+          <br /> Com um sólido background técnico e uma busca constante por
+          inovação, meu foco é criar soluções digitais que realmente agreguem
+          valor.
+        </span>
+
         <div className="flex gap-5">
           <a href="https://github.com/JoseDaniloS" target="_blank">
             <img src={Github} alt="" className="w-[50px] cursor-pointer" />
