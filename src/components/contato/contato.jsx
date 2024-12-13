@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 export const Contato = () => {
   const form = useRef();
@@ -16,11 +17,11 @@ export const Contato = () => {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Email enviado com sucesso!");
           form.current.reset();
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast.error("Não foi possivel enviar o email!", error.text);
         }
       );
   };
@@ -30,7 +31,7 @@ export const Contato = () => {
       className=" w-[100vw] flex flex-col items-center bg-[#032D58] text-white text-[20px] gap-5 p-5"
     >
       <h1 className="text-[40px] font-bold max-md:text-[35px]">Contato</h1>
-      <div className="flex flex-col space-y-5 flex-wrap">
+      <div className="flex flex-col flex-wrap space-y-5">
         <h1>Entre em Contato</h1>
         <span>
           Estou disponível para novos projetos e oportunidades. Sinta-se à

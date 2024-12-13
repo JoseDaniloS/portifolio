@@ -12,7 +12,7 @@ function Projetos() {
       className="flex flex-col items-center space-y-10 text-[#032D58] max-md:w-[90vw]"
     >
       <h1 className="text-[40px] font-bold max-md:text-[35px]">Projetos</h1>
-      <div className="flex flex-col space-y-10 items-center w-full">
+      <div className="flex flex-col items-center w-full space-y-10">
         <p className="font-bold text-[20px]">Código Público</p>
         <div className="flex gap-16 flex-wrap justify-center max-md:w-[90vw]">
           <PComponents
@@ -31,7 +31,7 @@ function Projetos() {
           />
         </div>
       </div>
-      <div className="flex flex-col space-y-10 items-center w-full">
+      <div className="flex flex-col items-center w-full space-y-10">
         <p className="font-bold text-[20px]">Código Privado</p>
         <div className="flex gap-16 flex-wrap justify-center max-md:w-[90vw]">
           <PComponents
