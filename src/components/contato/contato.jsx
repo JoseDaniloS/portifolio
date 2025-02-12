@@ -27,10 +27,10 @@ export const Contato = () => {
   return (
     <div
       id="contato"
-      className=" w-[100vw] flex flex-col items-center bg-[#032D58] text-white text-[20px] gap-5 p-5"
+      className=" w-screen flex flex-col items-center bg-[#032D58] text-white text-[20px] gap-5 p-5"
     >
       <h1 className="text-[40px] font-bold max-md:text-[35px]">Contato</h1>
-      <div className="flex flex-col space-y-5 flex-wrap">
+      <div className="flex flex-col space-y-5 w-[1169px] max-xl:w-[90vw]">
         <h1>Entre em Contato</h1>
         <span>
           Estou disponível para novos projetos e oportunidades. Sinta-se à
