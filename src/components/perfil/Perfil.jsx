@@ -8,7 +8,7 @@ function Perfil() {
       <div>
         <img src={Iam} alt="" className="w-[25vw] rounded-full max-md:w-[90vw]" />
       </div>
-      <div className=" flex flex-col gap-5 max-md:items-center">
+      <div className="flex flex-col gap-5 max-md:items-center">
         <h1 className=" text-[40px] text-[#032D58] font-bold max-md:text-[32px] text-center">
           Olá, me chamo José Danilo
         </h1>

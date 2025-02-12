@@ -1,6 +1,5 @@
 import PComponents from "./project_components";
 import Imc from "./images/imc_calculator.png";
-import StreetLight from "./images/street_light.png";
 import SGB from "./images/SGB.png";
 import Carcara from "./images/Carcara.png";
 import Weather from "./images/WeatherApp.png";
@@ -13,7 +12,7 @@ function Projetos() {
       className="flex flex-col items-center space-y-10 text-[#032D58] max-md:w-[90vw]"
     >
       <h1 className="text-[40px] font-bold max-md:text-[35px]">Projetos</h1>
-      <div className="flex flex-col space-y-10 items-center w-full">
+      <div className="flex flex-col items-center w-full space-y-10">
         <p className="font-bold text-[20px]">Código Público</p>
         <div className="flex gap-16 flex-wrap justify-center max-md:w-[90vw]">
           <PComponents
@@ -21,13 +20,6 @@ function Projetos() {
             link_github={"https://github.com/JoseDaniloS/imc-calculator"}
             link_projeto={"https://imc-calculator-cyan.vercel.app"}
             nome={"IMC Calculator"}
-            tipo={true}
-          />
-          <PComponents
-            image={StreetLight}
-            link_github={"https://github.com/JoseDaniloS/street-light"}
-            link_projeto={"https://street-light.vercel.app/"}
-            nome={"Street Light"}
             tipo={true}
           />
           <PComponents
@@ -39,7 +31,7 @@ function Projetos() {
           />
         </div>
       </div>
-      <div className="flex flex-col space-y-10 items-center w-full">
+      <div className="flex flex-col items-center w-full space-y-10">
         <p className="font-bold text-[20px]">Código Privado</p>
         <div className="flex gap-16 flex-wrap justify-center max-md:w-[90vw]">
           <PComponents
@@ -53,7 +45,7 @@ function Projetos() {
           <PComponents
             image={Frequencia}
             link_projeto={"https://www.frequencia-academica.ufersa.dev.br"}
-            nome={"Frequência Acadêmica - Projeto Carcará/LISA"}
+            nome={"Folha Frequência - Projeto Carcará/LISA"}
             tipo={false}
           />
           <PComponents
