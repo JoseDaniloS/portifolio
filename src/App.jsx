@@ -4,9 +4,10 @@ import Habilidades from "./components/skills_components/Habilidades";
 import Perfil from "./components/perfil/Perfil";
 import Projetos from "./components/projects/projects";
 import Contato from "./components/contato/contato";
-import Footer from "./components/footer/footer";
+import Footer from "./layout/footer/footer";
 import { useState } from "react";
 import Navbar from "./components/navbar/navbar";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [navigation, setNavigation] = useState(false);
