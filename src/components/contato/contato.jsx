@@ -1,11 +1,13 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { Button, TextField } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
 
 export const Contato = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault();
 
     emailjs
@@ -20,8 +22,8 @@ export const Contato = () => {
           toast.success("Email enviado com sucesso!");
           form.current.reset();
         },
-        (error) => {
-          toast.error("Não foi possivel enviar o email!", error.text);
+        error => {
+          toast.error("Não foi possivel enviar o email!", error.message);
         }
       );
   };
@@ -44,34 +46,98 @@ export const Contato = () => {
           method="post"
           className="flex flex-col space-y-4"
         >
-          <input
-            type="text"
-            name="user_name"
+          <TextField
             id="nome"
-            placeholder="Seu Nome"
-            className=" h-[50px] pl-[10px] rounded-md focus:outline-none text-[black]"
+            name="user_name"
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                "& .MuiInputBase-input": {
+                  color: "white" // Cor do texto global
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white" // Cor da borda quando o campo está focado
+                }
+              },
+              "& .MuiInputLabel-root": {
+                color: "white", // Cor padrão do label
+                "&.Mui-focused": {
+                  color: "white" // Cor do label quando focado
+                }
+              }
+            }}
             required
+            className="rounded-md bg-[#FFFFFF80]"
+            label="Seu Nome"
+            variant="outlined"
           />
-          <input
-            type="email"
-            name="user_email"
+          <TextField
             id="email"
-            placeholder="Seu Email"
-            className="h-[50px] pl-[10px] rounded-md focus:outline-none text-[black]"
+            name="user_email"
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                "& .MuiInputBase-input": {
+                  color: "white" // Cor do texto global
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white" // Cor da borda quando o campo está focado
+                }
+              },
+              "& .MuiInputLabel-root": {
+                color: "white", // Cor padrão do label
+                "&.Mui-focused": {
+                  color: "white" // Cor do label quando focado
+                }
+              }
+            }}
             required
+            className="rounded-md bg-[#FFFFFF80]"
+            label="Seu Email"
+            variant="outlined"
           />
+          <TextField
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                "& .MuiInputBase-input": {
+                  color: "white" // Cor do texto global
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white" // Cor da borda quando o campo está focado
+                }
+              },
 
-          <textarea
+              "& .MuiInputLabel-root": {
+                color: "white", // Cor padrão do label
+                "&.Mui-focused": {
+                  color: "white" // Cor do label quando focado
+                }
+              }
+            }}
+            required
+            className="rounded-md bg-[#FFFFFF80]"
+            label="Seu Mensagem"
             name="message"
             id="mensagem"
-            wrap="soft"
-            spellCheck="true"
-            placeholder="Sua Mensagem"
-            className="h-[200px] p-[10px] rounded-md focus:outline-none text-[black] resize-none"
-          ></textarea>
-          <button className=" bg-[white] text-[#032D58] font-semibold w-[220px] h-[50px] rounded-[10px] ">
+            multiline
+            minRows={5}
+          />
+          <Button
+            type="submit"
+            variant="contained"
+            endIcon={<SendIcon />}
+            sx={{
+              backgroundColor: "white",
+              color: "#032D58",
+              fontWeight: "bold",
+              width: "220px",
+              height: "50px",
+              borderRadius: "10px",
+              "&:hover": {
+                backgroundColor: "#f0f0f0" // Cor ao passar o mouse
+              }
+            }}
+          >
             Enviar Mensagem
-          </button>
+          </Button>
         </form>
       </div>
     </div>
